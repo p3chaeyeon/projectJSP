@@ -65,7 +65,7 @@
         <h3><a href="./member/memberUpdateForm.jsp">회원정보수정</a></h3>
         <h3><a href="./member/memberLogOut.jsp">로그아웃</a></h3>
         <h3><a href="./board/boardWriteForm.jsp">글쓰기</a></h3>
-        <h3><a href="./board/boardList.jsp?pg=1">목록</a></h3>
+        <h3><a href="./board/boardList.jsp?pg=1">글목록</a></h3>
         <h3><a href="./member/memberDeleteForm.jsp">회원탈퇴</a></h3>
     </div>
 <% 
