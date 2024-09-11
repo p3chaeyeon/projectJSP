@@ -3,6 +3,7 @@
 <%@ page import="board.bean.BoardDTO" %>
 <%@ page import="board.bean.BoardPaging" %>
 <%@ page import="board.dao.BoardDAO" %>
+<%@page import="java.text.SimpleDateFormat"%>
 <%@ page import="java.util.List"%>
 
 
@@ -111,16 +112,17 @@ span:hover {
     	</tr>
     <% 
     if(list != null) { 
+    	SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
     	for(BoardDTO boardDTO : list) { 
 	%>
-    		<tr>
-				<td><%= boardDTO.getSeq() %></td>
-				<td align="left"><%= boardDTO.getSubject() %></td>
-				<td><%= boardDTO.getId() %></td>
-				<td><%= boardDTO.getLogtime() %></td>
-				<td><%= boardDTO.getHit() %></td>
-    		</tr>
-	<% 
+         <tr>
+             <td><%= boardDTO.getSeq() %></td>
+             <td align="left"><%= boardDTO.getSubject() %></td>
+             <td><%= boardDTO.getId() %></td>
+             <td><%= sdf.format(boardDTO.getLogtime()) %></td>
+             <td><%= boardDTO.getHit() %></td>
+         </tr>
+     <% 
 	    }
 	} else {
 	%>
