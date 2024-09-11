@@ -55,7 +55,7 @@
         <h2>메인화면</h2>
         <h3><a href="./member/memberWriteForm.jsp">회원가입</a></h3>
         <h3><a href="./member/memberLogInForm.jsp">로그인</a></h3>
-        <h3><a href="#">목록</a></h3>
+        <h3><a href="./board/boardList.jsp?pg=1">글목록</a></h3>
     </div>
 <% 
     } else { 
