@@ -3,7 +3,7 @@
 <%@ page import="board.bean.BoardDTO" %>
 <%@ page import="board.bean.BoardPaging" %>
 <%@ page import="board.dao.BoardDAO" %>
-<%@page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import="java.util.List"%>
 
 
